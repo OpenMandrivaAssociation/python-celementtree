@@ -2,7 +2,7 @@
 %define name		python-celementtree
 %define version		1.0.5
 %define date_version	20051216
-%define rel 1
+%define rel 2
 
 Name: 		%{name}
 Version: 	%{version}
