@@ -14,7 +14,6 @@ URL:            http://effbot.org/zone/element-index.htm
 Source0:        http://effbot.org/downloads/%{module}-%{version}-%{date_version}.tar.bz2
 Requires:	python-elementtree
 BuildRequires:	python-devel >= 2.2
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This is an add-on to the standard ElementTree package, which adds a very fast
