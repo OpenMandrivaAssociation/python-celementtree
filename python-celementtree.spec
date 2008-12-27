@@ -2,7 +2,7 @@
 %define name		python-celementtree
 %define version		1.0.5
 %define date_version	20051216
-%define rel 2
+%define rel 3
 
 Name: 		%{name}
 Version: 	%{version}
@@ -13,7 +13,7 @@ License:	Python license
 URL:            http://effbot.org/zone/element-index.htm
 Source0:        http://effbot.org/downloads/%{module}-%{version}-%{date_version}.tar.bz2
 Requires:	python-elementtree
-BuildRequires:	python-devel >= 2.2
+%py_requires -d
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
