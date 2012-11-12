@@ -1,0 +1,16 @@
+Index: cElementTree-1.0.5-20051216/setup.py
+===================================================================
+--- cElementTree-1.0.5-20051216.orig/setup.py
++++ cElementTree-1.0.5-20051216/setup.py
+@@ -63,9 +63,8 @@ ext_modules = []
+ 
+ ext_modules.append(
+     Extension(
+-        "cElementTree", ["cElementTree.c"] + sources,
+-        define_macros=defines,
+-        include_dirs=includes,
++        "cElementTree", ["cElementTree.c"],
++        libraries=['expat']
+         )
+     )
+ 
