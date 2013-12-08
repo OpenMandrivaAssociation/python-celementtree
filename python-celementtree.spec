@@ -11,8 +11,8 @@ Url:		http://effbot.org/zone/element-index.htm
 Source0:	http://effbot.org/downloads/%{module}-%{version}-%{date_version}.tar.bz2
 Patch0:		celementtree-1.0.5-external-libexpat.patch
 BuildRequires:	pkgconfig(expat)
+BuildRequires:  python-devel
 Requires:	python-elementtree
-%py_requires -d
 
 %description
 This is an add-on to the standard ElementTree package, which adds a very fast
