@@ -11,7 +11,7 @@ URL:            http://effbot.org/zone/element-index.htm
 Source0:        http://effbot.org/downloads/%{module}-%{version}-%{date_version}.tar.bz2
 Patch0:		celementtree-1.0.5-external-libexpat.patch
 Requires:	python-elementtree
-%py_requires -d
+BuildRequires:	pkgconfig(python)
 BuildRequires:	expat-devel
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
