@@ -3,7 +3,7 @@
 %define debug_package	%nil
 
 Summary:	Add-on to the standard ElementTree package
-Name:		python-celementtree
+Name:		python2-celementtree
 Version:	1.2.6
 Release:	1
 Group:		Development/Python
