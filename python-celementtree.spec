@@ -1,17 +1,17 @@
-%define module		cElementTree
-%define date_version	20051216
+%define module		elementtree
+%define date_version	20050316
+%define debug_package	%nil
 
 Summary:	Add-on to the standard ElementTree package
 Name:		python-celementtree
-Version:	1.0.5
-Release:	15
+Version:	1.2.6
+Release:	1
 Group:		Development/Python
 License:	Python license
 Url:		http://effbot.org/zone/element-index.htm
-Source0:	http://effbot.org/downloads/%{module}-%{version}-%{date_version}.tar.bz2
-Patch0:		celementtree-1.0.5-external-libexpat.patch
+Source0:	http://effbot.org/downloads/%{module}-%{version}-%{date_version}.tar.gz
 BuildRequires:	pkgconfig(expat)
-BuildRequires:  python-devel
+BuildRequires:  python2-devel
 Requires:	python-elementtree
 
 %description
@@ -23,11 +23,12 @@ and memory-efficient alternative implementation of the ElementTree API.
 %apply_patches
 
 %build
-%{__python} setup.py build
+%{__python2} setup.py build
 
 %install
-%{__python} setup.py install --root=%{buildroot} --record INSTALLED_FILES
+%{__python2} setup.py install --root=%{buildroot}
 
-%files -f INSTALLED_FILES
+%files
 %doc samples README* CHANGES*
-
+%{python2_sitelib}/*.egg*
+%{python2_sitelib}/%{module}/*
