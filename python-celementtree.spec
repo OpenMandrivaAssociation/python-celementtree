@@ -5,7 +5,7 @@
 Summary:	Add-on to the standard ElementTree package
 Name:		python2-celementtree
 Version:	1.2.6
-Release:	4
+Release:	5
 Group:		Development/Python
 License:	Python license
 Url:		http://effbot.org/zone/element-index.htm
