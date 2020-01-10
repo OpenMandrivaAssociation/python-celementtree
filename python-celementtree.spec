@@ -20,7 +20,7 @@ and memory-efficient alternative implementation of the ElementTree API.
 
 %prep
 %setup -qn %{module}-%{version}-%{date_version}
-%apply_patches
+%autopatch -p1
 
 %build
 %{__python2} setup.py build
