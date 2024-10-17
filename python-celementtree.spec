@@ -8,7 +8,7 @@ Version:	1.2.6
 Release:	5
 Group:		Development/Python
 License:	Python license
-Url:		http://effbot.org/zone/element-index.htm
+Url:		https://effbot.org/zone/element-index.htm
 Source0:	http://effbot.org/downloads/%{module}-%{version}-%{date_version}.tar.gz
 BuildRequires:	pkgconfig(expat)
 BuildRequires:  python2-devel
